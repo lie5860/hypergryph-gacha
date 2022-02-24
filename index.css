@@ -1,0 +1,160 @@
+* {
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-text-size-adjust: none;
+    -webkit-touch-callout: none;
+    box-sizing: border-box;
+}
+
+:root {
+    --three-color: var(--sl-color-neutral-600);
+    --four-color: var(--sl-color-purple-600);
+    --five-color: var(--sl-color-amber-500);
+    --six-color: var(--sl-color-orange-600);
+    --tip: var(--sl-color-neutral-600);
+    --black: var(--sl-color-neutral-1000);
+    --white: var(--sl-color-neutral-0);
+}
+
+html {
+    background: var(--sl-color-neutral-0);
+    color: var(--sl-color-neutral-1000);
+}
+
+body {
+    background-color: var(--white);
+}
+
+@media (min-width: 800px) and  (-webkit-device-pixel-ratio: 1) {
+    .detail-data {
+        width: 50% !important;
+    }
+}
+
+@media (min-width: 1600px) and  (-webkit-device-pixel-ratio: 2) {
+    .detail-data {
+        width: 50% !important;
+    }
+}
+
+@media (min-width: 2400px) and  (-webkit-device-pixel-ratio: 3) {
+    .detail-data {
+        width: 50% !important;
+    }
+}
+
+a {
+    color: var(--sl-color-primary-600);
+}
+
+.title {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    box-sizing: border-box;
+}
+
+.main-container {
+    padding: 20px;
+    font-size: 1rem;
+}
+
+.alert--closable {
+    margin-bottom: 1rem;
+}
+
+.token {
+    display: inline-block;
+    width: calc(100% - 84px);
+}
+
+.submitBtn {
+    display: inline-block;
+}
+
+.dataGrid {
+    padding-top: 5px;
+    text-align: center;
+}
+
+.pBlue {
+    color: var(--sl-color-primary-700);
+}
+
+.detail-data {
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: left;
+    line-height: 1.5;
+    float: left;
+    width: 100%;
+}
+
+.pt10 {
+    padding-top: 10px
+}
+
+.clean-float:after { /*伪元素是行内元素 正常浏览器清除浮动方法*/
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.spinner-icon{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+}
+.spinner-bg {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--sl-color-neutral-700);
+    opacity: 0.5;
+}
+
+.echart-c {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.avatar-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.new-tag {
+    font-family: 'monospace';
+    color: var(--sl-color-primary-400);
+}
+
+
+.tip {
+    font-family: 'monospace';
+    color: var(--sl-color-neutral-600);
+}
