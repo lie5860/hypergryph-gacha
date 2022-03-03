@@ -17,7 +17,7 @@ Lighthouse结果
 
 本地调试方式 npm i => npm run build => 打开test目录下的index.html访问
 
-欢迎小伙伴提Isuse给这个小工具提一些建议和想法。
+欢迎小伙伴提Issue给这个小工具提一些建议和想法。
 
 ## 版本履历
 
