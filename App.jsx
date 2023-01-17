@@ -211,9 +211,11 @@ const GridItem = ({item, color}) => {
 const DataGrid = ({res, color}) => {
     const {data, uid, nickName} = res;
     return <div key={uid}>
-        <div className={'dataGrid clean-float pt10'}>
+        <div className={'title-container'}>
             <div className="title">UID: {uid}</div>
             <div className="title">{nickName}</div>
+        </div>
+        <div className={'dataGrid clean-float'}>
             {data.map((item, i) => <GridItem key={i} color={color} item={item}/>)}
         </div>
         <div className={'avatar-me'} onClick={() => window.open('https://github.com/lie5860/hypergryph-gacha')}>
@@ -274,7 +276,7 @@ export default function Home() {
         localStorage.setItem('token', token)
         let dealValue = token;
         try {
-            dealValue = /"token":"(.*?)"/.exec(dealValue)[1]
+            dealValue = /"content":"(.*?)"/.exec(dealValue)[1]
             // dealValue = JSON.parse(token).data.token;
         } catch (e) {
         }
@@ -313,7 +315,7 @@ export default function Home() {
         <div className={'main-container clean-float'}>
             <sl-alert variant="primary" open>
                 请首先在 <a href="https://ak.hypergryph.com/user">官网</a> 登录，随后访问 <a
-                href="https://as.hypergryph.com/user/info/v1/token_by_cookie">此处</a> 复制全部内容（如了解JSON也可仅复制data中的token），然后在此填入。（请使用同一浏览器
+                href="https://web-api.hypergryph.com/account/info/hg">此处</a> 复制全部内容（如了解JSON也可仅复制data中的token），然后在此填入。（请使用同一浏览器
             </sl-alert>
             <br/>
             <form onSubmit={init}>
