@@ -26,21 +26,42 @@ body {
     background-color: var(--white);
 }
 
-@media (min-width: 800px) and  (-webkit-device-pixel-ratio: 1) {
+@media (min-width: 800px) and (-webkit-device-pixel-ratio: 1) {
     .detail-data {
-        width: 50% !important;
+        break-inside: avoid;
+        counter-increment: item-counter;
+        float: unset !important;
+    }
+
+    .dataGrid {
+        column-count: 2; /*css3新增，把contaner容器中的内容分为三列*/
+        column-gap: 10px; /*定义列之间的间隙为20px*/
     }
 }
 
 @media (min-width: 1600px) and  (-webkit-device-pixel-ratio: 2) {
     .detail-data {
-        width: 50% !important;
+        break-inside: avoid;
+        counter-increment: item-counter;
+        float: unset !important;
+    }
+
+    .dataGrid {
+        column-count: 2; /*css3新增，把contaner容器中的内容分为三列*/
+        column-gap: 10px; /*定义列之间的间隙为20px*/
     }
 }
 
 @media (min-width: 2400px) and  (-webkit-device-pixel-ratio: 3) {
     .detail-data {
-        width: 50% !important;
+        break-inside: avoid;
+        counter-increment: item-counter;
+        float: unset !important;
+    }
+
+    .dataGrid {
+        column-count: 2; /*css3新增，把contaner容器中的内容分为三列*/
+        column-gap: 10px; /*定义列之间的间隙为20px*/
     }
 }
 
@@ -84,7 +105,6 @@ body {
 }
 
 .dataGrid {
-    padding-top: 5px;
     text-align: center;
 }
 
@@ -112,7 +132,8 @@ body {
     clear: both;
     visibility: hidden;
 }
-.spinner-icon{
+
+.spinner-icon {
     position: fixed;
     top: 0;
     bottom: 0;
@@ -123,6 +144,7 @@ body {
     justify-content: center;
     background-color: transparent;
 }
+
 .spinner-bg {
     position: fixed;
     top: 0;
@@ -157,4 +179,9 @@ body {
 .tip {
     font-family: 'monospace';
     color: var(--sl-color-neutral-600);
+}
+
+.title-container {
+    text-align: center;
+    margin: 10px 0;
 }

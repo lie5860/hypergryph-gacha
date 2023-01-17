@@ -211,9 +211,11 @@ const GridItem = ({item, color}) => {
 const DataGrid = ({res, color}) => {
     const {data, uid, nickName} = res;
     return <div key={uid}>
-        <div className={'dataGrid clean-float pt10'}>
+        <div className={'title-container'}>
             <div className="title">UID: {uid}</div>
             <div className="title">{nickName}</div>
+        </div>
+        <div className={'dataGrid clean-float'}>
             {data.map((item, i) => <GridItem key={i} color={color} item={item}/>)}
         </div>
         <div className={'avatar-me'} onClick={() => window.open('https://github.com/lie5860/hypergryph-gacha')}>
